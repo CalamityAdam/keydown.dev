@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  font-family: 'Red Hat Display', sans-serif;
+  /* font-family: 'Red Hat Mono', monospace; */
+  font-size: 16px;
+  line-height: 24px;
+
+  color-scheme: dark;
+  color: #f1f1f1;
+  background-color: #333;
+}
