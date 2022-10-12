@@ -43,7 +43,7 @@ function App() {
           />
         </a>
       </nav>
-      <div className='flex flex-col items-center justify-center h-full'>
+      <div className='flex flex-1 flex-col items-center justify-center'>
         <div className='text-2xl font-bold'>Key Down</div>
         <div className='text-xl font-bold'>code: {key.code}</div>
         <div className='text-xl font-bold'>key: {key.key}</div>
