@@ -5,7 +5,6 @@ import iconGithub from './assets/icon-github.svg';
 import iconEmail from './assets/icon-email.svg';
 
 const initialState = {
-  charCode: 0,
   code: '',
   key: '',
   keyCode: 0,
@@ -17,9 +16,8 @@ function App() {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      const { charCode, code, key, keyCode } = e;
+      const { code, key, keyCode } = e;
       setKey({
-        charCode,
         code,
         key,
         keyCode,
@@ -47,7 +45,6 @@ function App() {
       </nav>
       <div className='flex flex-col items-center justify-center h-full'>
         <div className='text-2xl font-bold'>Key Down</div>
-        <div className='text-xl font-bold'>charCode: {key.charCode}</div>
         <div className='text-xl font-bold'>code: {key.code}</div>
         <div className='text-xl font-bold'>key: {key.key}</div>
         <div className='text-xl font-bold'>keyCode: {key.keyCode}</div>
